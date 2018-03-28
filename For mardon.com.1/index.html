@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+  <style>
+    body {
+      /* background: white; */
+      /* background: #0C232F; */
+      height: 100%;
+    }
+    h1{ 
+      font-size: 36px;
+    }
+    h1, p {
+      position: relative;
+      
+      z-index: 3;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 400px;
+      padding: 300px 0 0 160px;
+
+    }
+    p{
+      padding-top: 10px;
+    }
+    #canvas{
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #moon{
+      position: fixed;
+      top: -500px;
+      right: -380px;
+      z-index: 5;
+    }
+    #manOnCliff{
+      position: fixed;
+      bottom: 0px;
+      right: 50px;
+      z-index: 7;
+      width: 260px;
+      height: 550px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="homepage">Hello, I'm Mardon, a Web Developer</h1>
+  <p class="homepage">
+     It is privelage for me that I can help influencial people broaden their influence
+  </p>
+  <img id="moon" src="D:/Documents/Projects/Mardon.com/mockup/Images/Moon.svg" alt="">
+  <img id="manOnCliff" src="D:/Documents/Projects/Mardon.com/mockup/Images/manOnCliff.svg" alt="">
+  <canvas id="canvas"></canvas>
+  <script src="canvas.js"></script>
+</body>
+</html>
